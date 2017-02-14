@@ -1,0 +1,13 @@
+Hi!
+<h2>Update <%=@currentPokemonName %></h2>
+<p>
+  <form action=/:name method="post">
+      <input name="to_update" type="text" value="Pokemon to Update">
+      <input name="name" type="text" value="Name">
+      <input name="cp" type="text" value="CP">
+      <input name="poke_type" type="text" value="Pokemon Type">
+      <input name="img_url" type="text" value="Image URL">
+      <input type="submit" value="Edit Pokemon">
+  </form>
+</p>
+<p><%=@pokeName%></p>

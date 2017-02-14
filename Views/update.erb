@@ -1,0 +1,5 @@
+Hi!
+<h2>Update your Pokemon</h2>
+<% @pokemon.each do |pokemon|%>
+<p> <a href="/<%=pokemon[:name] %>"><%=pokemon[:name] %></a> </p>
+<% end %>

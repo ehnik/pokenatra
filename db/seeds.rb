@@ -1,7 +1,10 @@
+require "bundler/setup"
+
+require 'sinatra'
 require 'active_record'
-require 'ffaker'
-require 'pg'
-require_relative 'connection'
+require 'sinatra/reloader'
+
+require_relative './connection.rb'
 require_relative '../models/pokemon'
 
 Pokemon.destroy_all
